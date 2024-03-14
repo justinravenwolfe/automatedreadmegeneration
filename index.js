@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require("fs")
 /*A question object is a hash containing question related values:
 
 type: (String) Type of the prompt. Defaults: input - Possible values: input, number, confirm, list, rawlist, expand, checkbox, password, editor
@@ -29,14 +30,21 @@ inquirer
       name:"description",
       message:"what is the project description?",
     }
-    
-//.gitignore
-
+  
     
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
     console.log(answers);
+    fs.writeFile("README.MD",`
+    Project title : ${answers.title}
+    Project developer : ${answers.name}
+    Developer Email : ${answers.email}
+    Project description: ${answers.description}
+    
+    `,()=>{
+
+    });
   })
   .catch((error) => {
     console.log(error)

@@ -30,43 +30,72 @@ inquirer
       name:"about",
       message:"what is the project description?",
     }
-  
+    ,
+    {
+      type:"input",
+      name:"brief",
+      message:"what is a brieft description of the project?",
+    } ,
+    {
+      type:"input",
+      name:"installation",
+      message:"How to install the project?",
+    },
+     
+    {
+      type:"input",
+      name:"features",
+      message:"what are the features of the project?",
+    },
+     
+    {
+      type:"input",
+      name:"usage",
+      message:"How to use this repo?",
+    },
+    {
+        type:"input",
+        name:"contribute",
+        message:"How to contribute to the project?",
+      },
+     
+    {
+      type:"input",
+      name:"license",
+      message:"what is the license of the project?",
+    }
     
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
-    console.log(answers);
-    fs.writeFile("README.MD",`
-    # ${answers.title}
+    
+    fs.writeFile("README.md",`# ${answers.title}
 
-    ${answers.brief}
-    
-    ## Table of Contents
-    - [About](#about)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Features](#features)
-    - [Contributing](#contributing)
-    - [License](#license)
-    - [Contact](#contact)
-    
-    ## About
-    ${answers.about}
-    ## Installation
-    ${answers.installation}
-    ## Usage
-    ${answers.usage}
-    ## Features
-    ${answers.features}
-    ## Contributing
-    ${answers.contribute}
-    ## License
-    ${answers.license}
-    ## Contact
-    - **Developer:** [${answers.name}]
-    - **Email:** [${answers.email}]
-   
-    `,()=>{
+${answers.brief}
+## Table of Contents
+- [About](#about)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+## About
+${answers.about}
+## Installation
+${answers.installation}
+## Usage
+${answers.usage}
+## Features
+${answers.features}
+## Contributing
+${answers.contribute}
+## License
+${answers.license}
+## Contact
+- **Developer:** [${answers.name}]
+- **Email:** [${answers.email}]
+`,()=>{
 
     });
   })

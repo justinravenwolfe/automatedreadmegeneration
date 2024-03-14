@@ -27,7 +27,7 @@ inquirer
     },
     {
       type:"input",
-      name:"description",
+      name:"about",
       message:"what is the project description?",
     }
   
@@ -37,11 +37,35 @@ inquirer
     // Use user feedback for... whatever!!
     console.log(answers);
     fs.writeFile("README.MD",`
-    Project title : ${answers.title}
-    Project developer : ${answers.name}
-    Developer Email : ${answers.email}
-    Project description: ${answers.description}
+    # ${answers.title}
+
+    ${answers.brief}
     
+    ## Table of Contents
+    - [About](#about)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Features](#features)
+    - [Contributing](#contributing)
+    - [License](#license)
+    - [Contact](#contact)
+    
+    ## About
+    ${answers.about}
+    ## Installation
+    ${answers.installation}
+    ## Usage
+    ${answers.usage}
+    ## Features
+    ${answers.features}
+    ## Contributing
+    ${answers.contribute}
+    ## License
+    ${answers.license}
+    ## Contact
+    - **Developer:** [${answers.name}]
+    - **Email:** [${answers.email}]
+   
     `,()=>{
 
     });

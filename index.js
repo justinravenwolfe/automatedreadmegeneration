@@ -34,7 +34,7 @@ inquirer
     {
       type:"input",
       name:"brief",
-      message:"what is a brieft description of the project?",
+      message:"what is a brief description of the project?",
     } ,
     {
       type:"input",
@@ -60,8 +60,9 @@ inquirer
       },
      
     {
-      type:"input",
+      type:"list",
       name:"license",
+      choices:["MIT","MIT2.0","Apach"],
       message:"what is the license of the project?",
     }
     

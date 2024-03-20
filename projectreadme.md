@@ -24,3 +24,5 @@ MIT
 ## Contact
 - **Developer:** [Justin Ramirez and Omaron B of Varsity of Tutors]
 - **Email:** [justinravenwolfe@gmail.com]
+- walkthrough video: https://drive.google.com/file/d/1VT9qbezC4Krn9whprht9JS1Pvgd0yfuH/view?usp=sharing
+-file link : https://github.com/justinravenwolfe/automatedreadmegeneration

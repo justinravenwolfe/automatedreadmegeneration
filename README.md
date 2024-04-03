@@ -1,6 +1,6 @@
-# automated read me generation
+# full stack note taker
 
-after answering a series of detailed questions the app will produce a readme
+this project creates notes
 ## Table of Contents
 - [About](#about)
 - [Installation](#installation)
@@ -10,17 +10,18 @@ after answering a series of detailed questions the app will produce a readme
 - [License](#license)
 - [Contact](#contact)
 ## About
-command line node.js app that produces professional readme
+this is a note taker
 ## Installation
-downlad the repo from github and use any IDE of your choice then download node.js, inquierer and file stream
+install the project from git hub by cloning.
 ## Usage
-use node index.js into the terminal 
+cd api node notes.js
 ## Features
-this automaically generates a read me
+original notes
 ## Contributing
-email the lead developer 
+contact the developer
 ## License
 MIT
 ## Contact
-- **Developer:** [Justin Ramirez and Omaron B of Varsity of Tutors]
+- **Developer:** [Justin Ramirez Omaron Bazna]
 - **Email:** [justinravenwolfe@gmail.com]
+https://drive.google.com/file/d/1VT9qbezC4Krn9whprht9JS1Pvgd0yfuH/view?usp=sharing
